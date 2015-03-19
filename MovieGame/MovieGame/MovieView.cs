@@ -8,5 +8,11 @@ namespace MovieGame
 {
     class MovieView
     {
+
+        public void WelcomeUser()
+        {
+            
+        }
+
     }
 }
