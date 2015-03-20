@@ -14,8 +14,9 @@ namespace MovieGame
             Console.WriteLine("!!WELCOME TO OUR GUESS THE MOVIE GAME!!");
 
             Console.WriteLine("Please enter your name??");
-
+            
             string username = Console.ReadLine();
+            Player player = new Player(username);
 
             Console.WriteLine("Welcome to the game{0}", username);   
         }
