@@ -14,6 +14,8 @@ namespace MovieGame
         [Required]
         public string Name { get; set; }
 
+        [Required]
+        public string Clues { get; set; }
 
         public bool Clue { get; set; }
        
