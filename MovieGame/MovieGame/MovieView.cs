@@ -34,24 +34,16 @@ namespace MovieGame
             //clue could be for same movie or a new movie
             //Console.WriteLine("After 3 Chances you get a new clue");
 
-            Console.WriteLine("Hit enter to continue");
-
-            ConsoleKeyInfo key = Console.ReadKey();
-
-            if (key.Key == ConsoleKey.Enter)
-            {
-                //TODO
-                //give the clue  
-            }
-            else
-            {
-                Console.WriteLine("Please hit enter ");
-            }
+            Console.WriteLine("Hit enter to start the game");
 
         }
 
+      
 
-
+        public void hitEnter()
+        {
+            Console.WriteLine("Please hit enter ");
+        }
 
     }
 }

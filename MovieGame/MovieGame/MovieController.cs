@@ -10,12 +10,28 @@ namespace MovieGame
     {
         MovieModel Model = new MovieModel();
         MovieView View = new MovieView();
+        LogicModel logic = new LogicModel();
+
+        private string input;
+
+
+        public void start()
+        {
+            View.WelcomeUser();
+            View.Instuction();
+            logic.newMethod(View);
+        }
 
         public void CheckGuess(string command)
         {
             //check the guess in model
             throw new NotImplementedException();
             //then show if guess is correct or not
+        }
+
+        public void Play()
+        {
+            throw new NotImplementedException();
         }
     }
 }
