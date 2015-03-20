@@ -10,5 +10,12 @@ namespace MovieGame
     {
         MovieModel Model = new MovieModel();
         MovieView View = new MovieView();
+
+        public void CheckGuess(string command)
+        {
+            //check the guess in model
+            throw new NotImplementedException();
+            //then show if guess is correct or not
+        }
     }
 }
