@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace MovieGame
 {
-    class MovieController
+    public class MovieController
     {
         MovieModel Model = new MovieModel();
         MovieView View = new MovieView();
