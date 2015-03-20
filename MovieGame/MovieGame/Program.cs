@@ -13,7 +13,7 @@ namespace MovieGame
         {
             MovieController controller = new MovieController();
             controller.start();
-            controller.Play();
+            controller.GiveClue();
 
 
 

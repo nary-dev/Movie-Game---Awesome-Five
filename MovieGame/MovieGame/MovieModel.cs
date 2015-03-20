@@ -17,13 +17,5 @@ namespace MovieGame
         [Required]
         public string Clues { get; set; }
 
-        public bool Clue { get; set; }
-       
-        public MovieDBContext context = new MovieDBContext();
-
-        public void Getclue()
-        {
-            context.Movies.Where(p => p.Clue);
-        }
     }
 }

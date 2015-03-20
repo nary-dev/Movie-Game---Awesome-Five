@@ -8,20 +8,20 @@ namespace MovieGame
 {
     class LogicModel
     {
-        public void newMethod(MovieView view)
-        {
-            ConsoleKeyInfo key = Console.ReadKey();
+        //public void newMethod(MovieView view)
+        //{
+        //    ConsoleKeyInfo key = Console.ReadKey();
 
-            if (key.Key == ConsoleKey.Enter)
-            {
-                //TODO
-                //give the clue  
-            }
-            else
-            {
-                 view.hitEnter();
+        //    if (key.Key == ConsoleKey.Enter)
+        //    {
+        //        //TODO
+        //        //give the clue  
+        //    }
+        //    else
+        //    {
+        //         view.hitEnter();
 
-            }
-        }
+        //    }
+        //}
     }
 }
