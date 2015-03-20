@@ -8,17 +8,24 @@ namespace MovieGame
 {
     public class MovieView
     {
+        public Player player;
 
-        public void WelcomeUser()
+        public void WelcomeToPlayer(string method)
+        {
+            Console.WriteLine("Welcome to the game{0}", method);
+        }
+
+        public string WelcomeUser()
         {
             Console.WriteLine("!!WELCOME TO OUR GUESS THE MOVIE GAME!!");
 
             Console.WriteLine("Please enter your name??");
             
             string username = Console.ReadLine();
-            Player player = new Player(username);
+            player = new Player(username);
 
-            Console.WriteLine("Welcome to the game{0}", username);   
+            return username;
+
         }
 
 
@@ -51,8 +58,15 @@ namespace MovieGame
 
         }
 
+        public void WriteClue(string clue)
+        {
+            Console.WriteLine(clue);
+        }
 
-
-
+        public void Correct()
+        {
+            Console.WriteLine("Congratulations! Someone needs to get outside more!");
+            player.Score += 1;
+        }
     }
 }
