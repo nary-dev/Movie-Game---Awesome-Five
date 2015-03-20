@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.Remoting.Contexts;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -11,30 +12,40 @@ namespace MovieGame
         MovieModel Model = new MovieModel();
         MovieView View = new MovieView();
         LogicModel logic = new LogicModel();
+        MovieDBContext context = new MovieDBContext();
 
         private string input;
 
 
         public void start()
         {
-            View.WelcomeUser();
+            //View.WelcomeUser();
+            View.WelcomeToPlayer(View.WelcomeUser());
             View.Instuction();
-            logic.newMethod(View);
+            
+            
         }
 
-        public bool CheckGuess(string command)
-        {
-            //check the guess in model
-            foreach (var VARIABLE in COLLECTION)
+         public void GiveClue()
+         {
+            string guess = "";
+            var database = context.Movies;
+
+            foreach (var row in database)
             {
-                
-            }
-            //then show if guess is correct or not
-        }
 
-        public void Play()
-        {
-            throw new NotImplementedException();
+
+                while (guess != row.Name)
+                {
+                    Console.Clear();
+                    View.WriteClue(row.Clues);
+                    guess = Console.ReadLine();
+                }
+
+                View.Correct();
+                Console.ReadLine();
+                Console.Clear();
+            }
         }
     }
 }

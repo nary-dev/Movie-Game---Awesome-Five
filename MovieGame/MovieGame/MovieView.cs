@@ -1,24 +1,32 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace MovieGame
 {
-    public class MovieView
+    class MovieView
     {
+        public Player player;
 
-        public void WelcomeUser()
+        public void WelcomeToPlayer(string method)
+        {
+            Console.WriteLine("Welcome to the game {0}", method);
+        }
+
+        public string WelcomeUser()
         {
             Console.WriteLine("!!WELCOME TO OUR GUESS THE MOVIE GAME!!");
 
             Console.WriteLine("Please enter your name??");
             
             string username = Console.ReadLine();
-            Player player = new Player(username);
+            player = new Player(username);
 
-            Console.WriteLine("Welcome to the game{0}", username);   
+            return username;
+
         }
 
 
@@ -35,41 +43,31 @@ namespace MovieGame
             //clue could be for same movie or a new movie
             //Console.WriteLine("After 3 Chances you get a new clue");
 
+            Console.WriteLine("Hit enter to continue");
 
+            ConsoleKeyInfo key = Console.ReadKey();
 
-      
-
-        public void hitEnter()
-        {
-            Console.WriteLine("Please hit enter ");
+            if (key.Key == ConsoleKey.Enter)
+            {
+                //TODO
+                //give the clue  
+                Console.WriteLine("Lets get guessing");
+            }
+            else
+            {
+                Console.WriteLine("Please hit enter ");
+            }
         }
 
-
-        public void PrintClue(string passclue)
+        public void WriteClue(string clue)
         {
-            
-         
-
-
+            Console.WriteLine(clue);
         }
 
-
-        public void TrueOrFalse()
+        public void Correct()
         {
-            
+            Console.WriteLine("Congratulations! Someone needs to get outside more!");
+            player.Score += 1;
         }
-
-
-
-        public void PrintScore()
-        {
-            
-
-
-        }
-
-
-
-
     }
 }
