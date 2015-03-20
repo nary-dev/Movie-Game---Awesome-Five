@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace MovieGame
 {
-    public class MovieView
+    class MovieView
     {
 
         public void WelcomeUser()
@@ -43,11 +43,36 @@ namespace MovieGame
             {
                 //TODO
                 //give the clue  
+                Console.WriteLine("Lets get guessing");
             }
             else
             {
                 Console.WriteLine("Please hit enter ");
             }
+
+        }
+
+
+        public void PrintClue(string passclue)
+        {
+            
+         
+
+
+        }
+
+
+        public void TrueOrFalse()
+        {
+            
+        }
+
+
+
+        public void PrintScore()
+        {
+            
+
 
         }
 
