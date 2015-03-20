@@ -10,7 +10,13 @@ namespace MovieGame
     {
         static void Main(string[] args)
         {
-            Router router = new Router();new Router();
+            Router router = new Router();
+
+            ConsoleKeyInfo key = Console.ReadKey();
+            if (key.Key == ConsoleKey.Enter)
+            {
+              
+            }
         }
     }
 }
