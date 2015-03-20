@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace MovieGame
 {
-    class Router
+    public class Router
     {
         MovieController controller = new MovieController();
     }

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace MovieGame
 {
-    class MovieView
+    public class MovieView
     {
 
         public void WelcomeUser()
