@@ -22,10 +22,13 @@ namespace MovieGame
             logic.newMethod(View);
         }
 
-        public void CheckGuess(string command)
+        public bool CheckGuess(string command)
         {
             //check the guess in model
-            throw new NotImplementedException();
+            foreach (var VARIABLE in COLLECTION)
+            {
+                
+            }
             //then show if guess is correct or not
         }
 
