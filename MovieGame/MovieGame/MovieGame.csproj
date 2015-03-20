@@ -59,6 +59,10 @@
     <Compile Include="Migrations\201503192304408_add movielist.Designer.cs">
       <DependentUpon>201503192304408_add movielist.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201503200114187_Clues Prop Added.cs" />
+    <Compile Include="Migrations\201503200114187_Clues Prop Added.Designer.cs">
+      <DependentUpon>201503200114187_Clues Prop Added.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="MovieController.cs" />
     <Compile Include="MovieDBContext.cs" />
@@ -78,6 +82,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201503192304408_add movielist.resx">
       <DependentUpon>201503192304408_add movielist.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201503200114187_Clues Prop Added.resx">
+      <DependentUpon>201503200114187_Clues Prop Added.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
