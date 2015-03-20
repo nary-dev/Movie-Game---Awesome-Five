@@ -11,8 +11,14 @@ namespace MovieGame
     {
         static void Main(string[] args)
         {
-            Router router = new Router();
-           
+            MovieController controller = new MovieController();
+            controller.start();
+            controller.Play();
+
+
+
+            Console.ReadLine();
+
         }
     }
 }
