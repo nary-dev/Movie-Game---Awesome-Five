@@ -10,10 +10,9 @@ namespace MovieGame
     {
         MovieController controller = new MovieController();
 
-        public void Route(string[] args)
+        public void Route()
         {
-            var command = args.Length != 0 ? args[0].ToLowerInvariant() : String.Empty;
-            controller.CheckGuess(command);
+            controller.start();
         }
     }
 }
