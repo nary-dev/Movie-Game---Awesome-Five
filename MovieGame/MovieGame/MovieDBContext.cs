@@ -16,6 +16,9 @@ namespace MovieGame
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
+
+
+
         }
     }
 }

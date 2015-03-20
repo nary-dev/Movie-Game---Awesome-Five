@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace MovieGame
 {
-    public class MovieView
+    class MovieView
     {
 
         public void WelcomeUser()
@@ -52,10 +52,25 @@ namespace MovieGame
         }
 
 
-        public void PrintClues()
+        public void PrintClue(string passclue)
         {
             
          
+
+
+        }
+
+
+        public void TrueOrFalse()
+        {
+            
+        }
+
+
+
+        public void PrintScore()
+        {
+            
 
 
         }

@@ -10,5 +10,15 @@ namespace MovieGame
     {
         MovieModel Model = new MovieModel();
         MovieView View = new MovieView();
+
+        public bool CheckGuess(string command)
+        {
+            //check the guess in model
+            foreach (var VARIABLE in COLLECTION)
+            {
+                
+            }
+            //then show if guess is correct or not
+        }
     }
 }
